@@ -1,4 +1,4 @@
-# Wether-App
+# Weather-App
 A simple web application that fetches and displays real-time weather information for cities using the OpenWeatherMap API.
 Features
 
