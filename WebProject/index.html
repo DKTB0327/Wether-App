@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYC4CMT6JQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VYC4CMT6JQ');
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Finder</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="weather-card" class="hidden">
+            <div class="weather-icon">
+                <i id="weather-icon"></i>
+            </div>
+            <div class="weather-info">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="weather-description"></p>
+                <div class="details">
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+                    <p>Feels Like: <span id="feels-like"></span>°C</p>
+                    <p>Pressure: <span id="pressure"></span> hPa</p>
+                    <p>Visibility: <span id="visibility"></span> km</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+            </div>
+        </div>
+        <div id="error-message" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
